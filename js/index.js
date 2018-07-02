@@ -5,10 +5,10 @@ var latitude;
 var longitude;
 
 $("#boton").click(function () {
-   /* if (document.getElementById("txtCiudad").value === "" || document.getElementById("txtRadio").value === ""
+    if (document.getElementById("txtCiudad").value === "" || document.getElementById("txtRadio").value === ""
         || document.getElementById("txtFechaInicio").value === "" || document.getElementById("txtFechaFin").value === "") {
         alert("Debe ingresar todos los campos");
-    } else {*/
+    } else {
         
         var geocoder = new google.maps.Geocoder();
         var city = document.getElementById("txtCiudad").value;
@@ -23,7 +23,7 @@ $("#boton").click(function () {
                 alert("Ingrese una ciudad válida")
             }
         });
-    //}
+    }
 });
 
 function obtenerModo() {
