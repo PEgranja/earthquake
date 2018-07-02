@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>EarthQuakes</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div>
+            <p class="titulo">EARTHQUAKES</p>
+        </div>
+        <form action="" name="forma" >
+            <div class="columnasCSS">
+                <div>
+                    <p>CIUDAD:</p>
+                    <input type="text" id="txtCiudad" name="txtCiudad" maxlength="13">
+                    <p>RADIO:</p>
+                    <input type="text" id="txtRadio" name="txtRadio" max="20001">
+                    <p>FECHA DE INICIO:</p>
+                    <input type="text" id="txtFechaInicio"  name="txtFechaInicio" required pattern="\d{4}/\d{1,2}/\d{1,2}">
+                    <p>FECHA DE FIN:</p>
+                    <input type="text" id="txtFechaFin" name="txtFechaFin" required pattern="\d{4}/\d{1,2}/\d{1,2}">
+                    <p>MODO:</p>
+                    <select id="selectModo">
+                        <option value="1" selected="selected">Seleccione un modo</option>
+                        <option value="2">count</option>
+                        <option value="3">average</option>
+                        <option value="4">compare</option>
+                    </select>
+                    <p></p>
+                    <button id="boton">CONSULTAR</button>
+                    <p>RESPUESTA:</p>
+                    <p class="txtRespuesta"></p>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="js/form-validation.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
